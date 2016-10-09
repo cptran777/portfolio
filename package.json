@@ -8,8 +8,8 @@
     "test": "tests"
   },
   "scripts": {
-    "build": "ember build",
-    "start": "ember server",
+    "build": "ember build --environment=production --output-path=./public/",
+    "start": "node server/index.js",
     "test": "ember test"
   },
   "repository": "",
@@ -41,5 +41,11 @@
     "ember-resolver": "^2.0.3",
     "ember-welcome-page": "^1.0.1",
     "loader.js": "^4.0.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "path": "^0.12.7"
   }
 }
