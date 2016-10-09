@@ -19,5 +19,4 @@ testem.log
 .env
 
 # Ember build
-/public/assets
-/public/fonts
+/client/public
